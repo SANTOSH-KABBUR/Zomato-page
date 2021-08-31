@@ -3,7 +3,12 @@
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
-    /* font-family: ; */
+    /* font-family: ;  */
+    border: none;
+}
+*:focus{
+    outline: none;
+    border: none;
 }
 
 a{
@@ -14,7 +19,7 @@ header{
     background-image: url(./images/hero.png);
     background-position: center;
     background-size: cover;
-    min-height: 60vh ;
+    height: 60vh ;
 }
 /*navbar styles*/
 nav{
@@ -43,3 +48,61 @@ nav .nav_item{
     justify-content: space-between;
     
 } 
+header div.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 70%;
+    margin: 0px auto;
+    color: white;
+}
+header h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+header i.fas.fa-map-marker-alt{
+    color: #F57082;
+}
+header i.fas.fa-search{
+    color: lightgrey;
+}
+div.search-box{
+    display: flex;
+    font-weight: 400;
+    background-color: white;
+    justify-content: space-between;
+    width: 65%;
+    border-radius: 10px;
+    /* padding: 6px; */
+} 
+
+
+header div.search-box div.separator{
+    background-color:lightgrey ;
+    width: 2px;
+    height: 80%;
+    margin: auto 0px;
+}
+
+header div.search-box div.input{
+    flex-grow: 80;
+    
+    padding-right: 10px;
+}
+header div.search-box div.input input{
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+div.search-box div{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 0 50px;
+}
+
+header div.search-box i{
+    margin: 0px 10px;
+}
